@@ -1,0 +1,19 @@
+MaterialDef HexGrid {
+
+    MaterialParameters {
+        TextureArray ColorMap
+    }
+
+    Technique {
+
+        VertexShader GLSL100: Shaders/HexGrid.vert
+        FragmentShader GLSL100: Shaders/HexGrid.frag
+
+        WorldParameters {
+            WorldViewProjectionMatrix      
+        }
+
+        Defines {
+        }
+    }
+}
